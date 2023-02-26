@@ -1,355 +1,284 @@
-
-<!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Starter</title>
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="../AdminLTE/plugins/fontawesome-free/css/all.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../AdminLTE/dist/css/adminlte.min.css">
-</head>
-<body class="hold-transition sidebar-mini">
-<div class="wrapper">
-
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Navbar Search -->
-      <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tourism Surabaya</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- icon from font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://tourism.surabaya.go.id/assets/front/images/img-logo-sparkling.png" alt="">
         </a>
-        <div class="navbar-search-block">
-          <form class="form-inline">
-            <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </li>
-
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-        </div>
-      </li>
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinasi.html">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kuliner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Starter Pages
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Starter Page</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
+    </nav>
+    <!-- Hero -->
+    <section class="d-flex align-items-center min-vh-100">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div><!-- /.card -->
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <!-- left col -->
+          
+          <!-- right col -->
+          <div class="col-md-6">
+            <div class="ms-3 ps-5 pe-5">
+              <h1 class="text-green display-2 fw-bold mt-3">Welcome <br> to Surabaya</h1>
+              <p class="mt-3 mb-5 ">Nikmati berbagai keindahan yang terkenal dengan sebutan kota pahlawan serta kunjungi berbagai tempat bersantai dengan teman dan keluarga. </p>
+              <a href="" class="btn btn-brand " style="color: #fff;">Lihat Sekarang</a>
             </div>
           </div>
-          <!-- /.col-md-6 -->
+          
+          <div class="col-md-6">
+            <img class="img-fluid object-fit-cover rounded-4 shadow" src="{{asset('images/rasyid-maulana-yVwiHXoTrnU-unsplash.jpg')}}" alt="">
+          </div>
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
+    </section>
+    
+<!-- feature -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-tittle text-center">
+              <h1 class="text-green">Feature</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <div class="feature py-5 px-4 rounded-4 shadow">
+              <div class="feature-icon">
+                <img class="mb-3" src="{{asset('images/icon/destination.png')}}" alt="">
+              </div>
+              <h5 class="mt-4">Destinasi Wisata</h5>
+              <p>Klik untuk rekomendasi destinasi wisata Surabaya</p>
+              <a href="#" class="custom-link text-decoration-underline">Lihat Lebih Lanjut</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <div class="feature py-5 px-4 rounded-4 shadow">
+              <div class="feature-icon">
+                <img class="mb-3" src="{{asset('images/icon/fork.png')}}" alt="">
+              </div>
+              <h5 class="mt-4">Kuliner Surabaya</h5>
+              <p>Klik untuk rekomendasi kuliner di Surabaya</p>
+              <a href="#" class="custom-link text-decoration-underline">Lihat Lebih Lanjut</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <div class="feature py-5 px-4 rounded-4 shadow">
+              <div class="feature-icon">
+                <img class="mb-3" src="{{asset('images/icon/party.png')}}" alt="">
+              </div>
+              <h5 class="mt-4">Event Surabaya</h5>
+              <p>Klik untuk melihat informasi event di Surabaya</p>
+              <a href="#" class="custom-link text-decoration-underline">Lihat Lebih Lanjut</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <div class="feature py-5 px-4 rounded-4 shadow">
+              <div class="feature-icon">
+                <img class="mb-3" src="{{asset('images/icon/map.png')}}" alt="">
+              </div>
+              <h5 class="mt-4">Peta Digital</h5>
+              <p>Klik untuk melihat peta digital Surabaya</p>
+              <a href="#" class="custom-link text-decoration-underline">Lihat Lebih Lanjut</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button type="button" class="btn btn-light">Lihat Semua</button>
+          </div>
+         </div>
+      </div>
     </div>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
+    <div class="container-fluid mt-5 mb-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1 class="text-green display-5 fw-bold mt-3">Start Your Best Journey In Surabaya</h1>
+          </div>
+        </div>
+      </div>
     </div>
-  </aside>
-  <!-- /.control-sidebar -->
 
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-      Anything you want
+    <div class="container-fluid mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <h3 class="display-6 mt-5 text-green fw-bold" style="font-size: 32px; font-weight: 900;">GEDUNG JAWA POS</h3>
+            <p class="" style="font-size: 16px;">
+              Gedung berlantai dua di Jl. Kembang Jepun <br> (Handelstraat) No. 167 dibangun pada tahun 1880-an. <br> Gedung yang dahulu bernama Unie Bank Voor <br> Nederland en Kolonien ini digunakan hingga tahun 1926.
+            </p>
+            <a href="" class="text-green">Baca Lebih Lanjut</a>
+          </div>
+         
+          <div class="col-md-4">
+            <img src="https://cdn-asset.jawapos.com/wp-content/uploads/2020/07/landscape-kota-surabaya.jpg" style="width: 478px; height: 334px;" class="img-fluid rounded-start rounded-end" alt="">
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
     </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
-</div>
-<!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
+    <!-- yang kedua -->
+    <div class="container-fluid mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <img src="https://bogordaily.net/wp-content/uploads/2022/12/image_750x_63ad3bb4931ad.jpg" style="width: 478px; height: 334px;" class="img-fluid rounded-start rounded-end" alt="">
+          </div>
+          
+          <div class="col-md-4 ms-5">
+            <h3 class="display-6 mt-5 text-green fw-bold" style="font-size: 32px; font-weight: 900;">KONSER TULUS TUR MANUSIA 2023</h3>
+            <p class="" style="font-size: 16px;">
+              Tulus - Tur Manusia 2023 merupakan <br> roadshow konser tunggal dari penyanyi <br> hits Indonesia, Tulus. Tour di 11 Kota ini <br> akan singgah ke Surabaya pada 12 <br> Februari 2023 di Jatim Expo
+            </p>
+            <a href="" class="text-green">Baca Lebih Lanjut</a>
+          </div>
+         <div class="col-md-2"></div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- yang kedua end -->
 
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
-</body>
+    <!-- yang ketiga -->
+    <div class="container-fluid mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <h3 class="display-6 mt-5 text-green fw-bold" style="font-size: 32px; font-weight: 900;">BALAI PEMUDA DAN ALUN-ALUN SURABAYA</h3>
+            <p class="" style="font-size: 16px;">
+              Gedung Balai Pemuda dibangun pada <br> tahun 1907 dengan nama Simpangsche <br> Societeit atau Simpangsche Club <br> sebagai sarana hiburan malam kaum <br> elit Eropa (terutama warga Belanda) <br> yang tinggal di Surabaya.
+            </p>
+            <a href="" class="text-green">Baca Lebih Lanjut</a>
+          </div>
+         
+          <div class="col-md-4">
+            <img src="https://www.ngopibareng.id/images/uploads/2022/2022-02-12/aktifkan-kegiatan-seni-di-balai-pemuda-sesuai-se-wali-kota--thumbnail-535" style="width: 478px; height: 334px;" class="img-fluid rounded-start rounded-end" alt="">
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- yang ketiga end -->
+
+    <!-- yang ke empat -->
+    <div class="container-fluid mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <img src="https://tourism.surabaya.go.id/storage/tour/1653019735_1.jpg" style="width: 478px; height: 334px;" class="img-fluid rounded-start rounded-end" alt="">
+          </div>
+          
+          <div class="col-md-4 ms-5">
+            <h3 class="display-6 mt-2 text-green fw-bold" style="font-size: 32px; font-weight: 900;">G WALK CITRALAND</h3>
+            <p class="" style="font-size: 16px;">
+              G-Walk berada di kawasan perumahan <br> Citraland berdiri sejak tahun 2002. <br> Konsepnya adalah pusat wisata kuliner <br> sepanjang koridor jalan dengan <br> banyaknya kafe-kafe dan restaurant <br> yang menawarkan berbagai macam <br> daya tarik tersendiri masing-masingnya <br> baik secara hidangan makanan minuman maupun konsep lokasinya.
+            </p>
+            <a href="" class="text-green">Baca Lebih Lanjut</a>
+          </div>
+         <div class="col-md-2 mb-5"></div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- yang keempat end -->
+
+    <!-- footer -->
+    <footer class="mt-5 pt-5 pb-5 mb-5" style="background-color: #F3FDEE;">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-2">
+            <img src="https://tourism.surabaya.go.id/assets/front/images/img-logo-sparkling.png" style="width: 100px;" alt="">
+          </div>
+          <div class="col-md-8 text-center">
+            <p style="color: #4AC064;">@2018 - 2023 Wisata Surabaya</p> 
+          </div>
+          <div class="col-md-2 text-right">
+            <i class="fa-brands fa-facebook fa-2x" style="color: #4AC064;"></i>
+            <i class="fa-brands fa-instagram fa-2x ms-4" style="color: #4AC064;"></i>
+          </div>
+          <hr class="mt-5" style="color: #4AC064;">
+        </div>
+
+
+        <!-- oke -->
+        <div class="row mt-5">
+          <div class="col-md-3">
+            <h5>Find Us</h5>
+            <p>Tourism Information Center <br>
+              Jl. Gubernur Suryo 15</p>
+          </div>
+          <div class="col-md-2">
+            <h5>Contact Us</h5>
+            <p>Dinas Kebudayaan m Kepemudaan dan Olahraga serta Pariwisata Kota Surabaya</p>
+
+            <p>
+              Jl. Tunjungan No.1-3 Kelurahan <br> Genteng Kecamatan Genteng, Kota <br> Surabaya Jawa Timur, Indonesia, <br> 60275
+            </p>
+
+            <p>031-5318409</p>
+            <p>disbudporapar@surabaya.go.id</p>
+          </div>
+          
+          <div class="col-md-5">
+            <h5>Our Other Sites</h5>
+            <p>Disbudporapar Surabaya</p>
+            <p>360° Surabaya</p>
+            <p>Tiket Wisata Surabaya</p>
+            <p>Katalog Museum Surabaya</p>
+            <p>Bangga Surabaya</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
